@@ -1,0 +1,41 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 50px;
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1{
+    color: #ff0066;
+    letter-spacing: 2px;
+}
+
+nav a{
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ff0066;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
